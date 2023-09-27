@@ -12,6 +12,11 @@ const connect = function () {
     console.log(data)
   })
 
+  conn.on("connect", () => {
+    console.log("Successfully connected to snek game")
+    conn.write("Name: HUH")
+  })
+
   return conn;
 };
 
