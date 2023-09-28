@@ -16,6 +16,9 @@ const handleUserInput = function (key) {
   if (key === "\u0064") {
     connection.write("Move: right")
   }
+  if (key === "\u0071") {
+    connection.write("Say: Ha Ha Ha, I am the snake king")
+  }
 };
 
 const setupInput = function (conn) {
